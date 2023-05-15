@@ -21,3 +21,11 @@ movements.forEach(movement =>
     `You ${movement > 0 ? 'withdrew' : 'deposited'} $${Math.abs(movement)}`
   )
 );
+console.log();
+
+// Retrieve array index using forEach
+movements.forEach(function (mov, i) {
+  console.log(
+    `Txn ${i + 1}: You ${mov > 0 ? 'withdrew' : 'deposited'} $${Math.abs(mov)}`
+  );
+});
