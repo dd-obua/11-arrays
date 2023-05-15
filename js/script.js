@@ -47,3 +47,10 @@ const ar = ['h', 'i', 'j', 'k', 'l', 'm'];
 console.log(ar);
 console.log(ar.splice(2, 3, 'x', 'y', 'z'));
 console.log(ar);
+
+// reverse
+const letters = ['z', 'y', 'x'];
+console.log(letters);
+const reverseOrder = letters.reverse();
+console.log(reverseOrder);
+console.log(letters);
