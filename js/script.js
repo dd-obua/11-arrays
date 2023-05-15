@@ -48,7 +48,7 @@ console.log(ar);
 console.log(ar.splice(2, 3, 'x', 'y', 'z'));
 console.log(ar);
 
-// reverse
+// reverse mtatates the array
 const letters = ['z', 'y', 'x'];
 console.log(letters);
 const reverseOrder = letters.reverse();
