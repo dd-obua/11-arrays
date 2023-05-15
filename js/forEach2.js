@@ -10,3 +10,11 @@ const currencies = new Map([
 currencies.forEach(function (val, key) {
   console.log(`${key}: ${val}`);
 });
+
+// Implement forEach with sets
+const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
+console.log(currenciesUnique);
+
+currenciesUnique.forEach(function (val, _, set) {
+  console.log(`${val}: ${val}`);
+});
