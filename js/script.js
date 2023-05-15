@@ -22,3 +22,6 @@ console.log(last3);
 
 const last = arr.slice(-1);
 console.log(last);
+
+const arr4 = arr.slice(1, -2);
+console.log(arr4);
