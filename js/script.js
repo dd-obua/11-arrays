@@ -48,9 +48,19 @@ console.log(ar);
 console.log(ar.splice(2, 3, 'x', 'y', 'z'));
 console.log(ar);
 
-// reverse mtatates the array
+// reverse mutates the array
 const letters = ['z', 'y', 'x'];
 console.log(letters);
 const reverseOrder = letters.reverse();
 console.log(reverseOrder);
 console.log(letters);
+
+// concat does not mutate the array
+const first = ['a', 'b', 'c'];
+const second = ['c', 'd', 'e'];
+const combined = first.concat(second);
+console.log(first);
+console.log(second);
+console.log(combined);
+console.log(first);
+console.log(second);
