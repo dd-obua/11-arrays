@@ -39,3 +39,6 @@ console.log(newArr);
 const newArr2 = newArr.splice(2);
 console.log(newArr2);
 console.log(newArr);
+
+newArr2.splice(-2);
+console.log(newArr2);
