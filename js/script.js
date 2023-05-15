@@ -68,6 +68,6 @@ console.log(second);
 const combined2 = [...first, ...second];
 console.log(combined2);
 
-// join
+// join returns a string seperated by the join seperator
 const joined = combined.join(' - ');
 console.log(joined);
