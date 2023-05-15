@@ -64,3 +64,6 @@ console.log(second);
 console.log(combined);
 console.log(first);
 console.log(second);
+
+const combined2 = [...first, ...second];
+console.log(combined2);
