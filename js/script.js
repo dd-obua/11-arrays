@@ -28,3 +28,6 @@ console.log(arr4);
 
 const arr5 = arr.slice();
 console.log(arr5);
+
+const arr6 = [...arr];
+console.log(arr6);
