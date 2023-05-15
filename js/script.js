@@ -9,3 +9,6 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 let arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+const newArr = arr.slice(2);
+console.log(newArr);
