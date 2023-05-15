@@ -11,3 +11,4 @@ console.log(arr.at(-1));
 // Use at method on strings
 const str = 'Thank you Lord!';
 console.log(str.at(10));
+console.log(str.at(-1));
