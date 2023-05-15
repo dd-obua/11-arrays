@@ -33,4 +33,9 @@ console.log(arr5);
 const arr6 = [...arr];
 console.log(arr6);
 
-// splice method does not mutate the original array 
+// splice method does not mutate the original array
+const newArr = ['p', 'q', 'r', 's', 't', 'u'];
+console.log(newArr);
+const newArr2 = newArr.splice(2);
+console.log(newArr2);
+console.log(newArr);
