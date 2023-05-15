@@ -12,3 +12,10 @@ movements.forEach(movement => {
   if (movement > 0) console.log(`You deposited $${movement}.`);
   else console.log(`You withdrew $${Math.abs(movement)}`);
 });
+
+// Refactor forEach
+movements.forEach(movement =>
+  console.log(
+    `You ${movement > 0 ? 'withdrew' : 'deposited'} $${Math.abs(movement)}`
+  )
+);
