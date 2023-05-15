@@ -5,3 +5,7 @@ const currencies = new Map([
   ['EUR', 'Euro'],
   ['GBP', 'Pound sterling'],
 ]);
+
+currencies.forEach(function (val, key) {
+  console.log(`${key}: ${val}`);
+});
