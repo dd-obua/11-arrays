@@ -67,3 +67,7 @@ console.log(second);
 
 const combined2 = [...first, ...second];
 console.log(combined2);
+
+// join
+const joined = combined.join(' - ');
+console.log(joined);
