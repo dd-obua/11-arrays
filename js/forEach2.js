@@ -6,6 +6,7 @@ const currencies = new Map([
   ['GBP', 'Pound sterling'],
 ]);
 
+// Implement forEach with maps
 currencies.forEach(function (val, key) {
   console.log(`${key}: ${val}`);
 });
