@@ -11,6 +11,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 let arr = ['a', 'b', 'c', 'd', 'e', 'f'];
 console.log(arr);
 
+// Slice method does not mutate the original array 
 const arr2 = arr.slice(2);
 console.log(arr2);
 
