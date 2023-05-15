@@ -9,7 +9,7 @@ for (const movement of movements)
 console.log();
 
 // Determine deposit and withdrawal using forEach method
-movements.forEach(movement => {
+movements.forEach(function (movement) {
   if (movement > 0) console.log(`You deposited $${movement}.`);
   else console.log(`You withdrew $${Math.abs(movement)}`);
 });
