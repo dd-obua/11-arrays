@@ -42,3 +42,8 @@ console.log(newArr);
 
 newArr2.splice(-2);
 console.log(newArr2);
+
+const ar = ['h', 'i', 'j', 'k', 'l', 'm'];
+console.log(ar);
+console.log(ar.splice(2, 3, 'x', 'y', 'z'));
+console.log(ar);
