@@ -13,7 +13,7 @@ console.log(txnsUsd);
 const txnDesc = txnsUsd.map(function (txn, i, arr) {
   return `Transaction ${
     i + 1
-  }: You ${txn > 0 ? 'deposited' : 'withdrew'} $${txn}`;
+  }: You ${txn > 0 ? 'deposited' : 'withdrew'} $${Math.abs(txn)}`;
 });
 
 console.log(txnDesc);
