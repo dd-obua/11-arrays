@@ -10,7 +10,7 @@ console.log(txns);
 console.log(txnsUsd);
 
 // Describe transactions
-const txnDesc = txnsUsd.map(function (txn, i, arr) {
+const txnDesc = txnsUsd.map(function (txn, i) {
   return `Transaction ${
     i + 1
   }: You ${txn > 0 ? 'deposited' : 'withdrew'} $${Math.abs(txn)}`;
