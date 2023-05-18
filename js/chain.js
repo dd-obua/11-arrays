@@ -8,3 +8,4 @@ const totalDeposit = txnValues
   .filter(val => val > 0)
   .map(val => val * euroToUsd)
   .reduce((acc, val) => acc + val, 0);
+console.log('Total desposit:', totalDeposit);
