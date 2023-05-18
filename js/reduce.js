@@ -9,4 +9,4 @@ const max = txnValues.reduce(
   (acc, txnVal) => (acc > txnVal ? acc : txnVal),
   txnValues[0]
 );
-console.log(max);
+console.log('Maximum:', max);
