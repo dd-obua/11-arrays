@@ -6,4 +6,5 @@ const euroToUsd = 1.1;
 // Take transation deposits, convert them from euros to dollars, then sum then up
 const totalDeposit = txnValues
   .filter(val => val > 0)
-  .map(val => val * euroToUsd);
+  .map(val => val * euroToUsd)
+  .reduce((acc, val) => acc + val, 0);
