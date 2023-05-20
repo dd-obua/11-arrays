@@ -44,3 +44,6 @@ for (let acc of accounts) {
   }
 }
 console.log('Acct:', acct);
+
+const account = accounts.find(acc => acc.owner === 'Pius Omoding');
+console.log('Account:', account);
