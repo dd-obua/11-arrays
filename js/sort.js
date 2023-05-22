@@ -17,4 +17,11 @@ nums.sort((a, b) => {
   if (a > b) return 1;
   if (a < b) return -1;
 });
-console.log('Sorted nums:', nums);
+console.log('Sorted nums (ascending):', nums);
+
+// Descending order
+nums.sort((a, b) => {
+  if (a > b) return -1;
+  if (b < b) return 1;
+});
+console.log('Sorted nums (descending):', nums);
