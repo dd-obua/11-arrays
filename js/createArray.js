@@ -22,3 +22,10 @@ console.log('y: ', y);
 
 const z = Array.from({ length: 5 }, (_, i) => i + 1);
 console.log('z: ', z);
+
+// Generate 100 random dice rolls
+const rolls = Array.from(
+  { length: 100 },
+  () => Math.trunc(Math.random() * 100) + 1
+);
+console.log('rolls:', rolls);
