@@ -18,4 +18,4 @@ console.log(arr.fill(23, 4, 6)); //
 
 // Using Array.from function
 const y = Array.from({ length: 7 }, () => 4);
-console.log(y);
+console.log('y: ', y);
