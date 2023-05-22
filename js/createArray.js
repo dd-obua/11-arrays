@@ -11,4 +11,4 @@ console.log(x); // creates an array with 7 empty items
 console.log(x.map(() => 5));
 
 // Fill empty array
-console.log(x.fill(5, 3));
+console.log(x.fill(5, 3, 5));
