@@ -10,6 +10,9 @@ console.log('-130 present?', txnValues.includes(-130));
 const anyDeposits = txnValues.some(txn => txn > 0);
 console.log('Any deposits?', anyDeposits);
 
+const above1500 = txnValues.some(txn => txn > 1500);
+console.log('Any deposits above 1500?', above1500);
+
 const above5000 = txnValues.some(txn => txn > 5000);
 console.log('Any deposits above 5000?', above5000);
 
