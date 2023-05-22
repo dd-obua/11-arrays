@@ -7,5 +7,5 @@ const items = selectAll('.item');
 const btn = select('.btn');
 
 btn.addEventListener('click', function () {
-  console.log(items);
+  console.log('Clicked!');
 });
