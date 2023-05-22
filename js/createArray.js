@@ -19,3 +19,6 @@ console.log(arr.fill(23, 4, 6)); //
 // Using Array.from function
 const y = Array.from({ length: 7 }, () => 4);
 console.log('y: ', y);
+
+const z = Array.from({ length: 5 }, (_, i) => i + 1);
+console.log('z: ', z);
