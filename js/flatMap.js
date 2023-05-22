@@ -30,3 +30,9 @@ const account4 = {
 };
 
 const accounts = [account1, account2, account3, account4];
+
+// Calculate overall total transactions
+const overallTxns = accounts
+  .flatMap(acct => acct.txns)
+  .reduce((acc, txn) => acc + txn);
+console.log('Overall transactions:', overallTxns);
