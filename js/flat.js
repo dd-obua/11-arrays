@@ -44,5 +44,5 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 // Compute the total of all transactions
-const overallTxns = accounts.map(acct => acct.txns);
+const overallTxns = accounts.map(acct => acct.txns).flat();
 console.log(overallTxns);
