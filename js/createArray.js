@@ -15,3 +15,7 @@ console.log(x.map(() => 5));
 console.log(x.fill(5, 3, 5));
 
 console.log(arr.fill(23, 4, 6)); //
+
+// Using Array.from function
+const y = Array.from({ length: 7 }, () => 4);
+console.log(y);
