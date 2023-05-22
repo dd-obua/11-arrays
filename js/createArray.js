@@ -13,3 +13,5 @@ console.log(x.map(() => 5));
 
 // Fill empty array
 console.log(x.fill(5, 3, 5));
+
+console.log(arr.fill(23, 4, 6)); //
