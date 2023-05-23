@@ -63,3 +63,15 @@ const bankWithdrawalSum = accounts
   .filter(txn => txn < 0)
   .reduce((sum, txn) => sum + txn, 0);
 console.log('Total bank withdrawals:', bankWithdrawalSum);
+
+// Compute sums of deposits and withdrawals at the same time using reduce
+const sums = accounts
+  .flatMap(acct => acct.txns)
+  .reduce(
+    (sums, curr) => {
+      curr > 0 ? (sums.deposits += curr) : (sums.withdrawals += curr);
+      return sums;
+    },
+    { deposits: 0, withdrawals: 0 }
+  );
+console.log('Sums: ', sums);
