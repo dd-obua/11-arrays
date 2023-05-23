@@ -65,7 +65,7 @@ const bankWithdrawalSum = accounts
 console.log('Total bank withdrawals:', bankWithdrawalSum);
 
 // Compute sums of deposits and withdrawals at the same time using reduce
-const sums = accounts
+const { deposits, withdrawals } = accounts
   .flatMap(acct => acct.txns)
   .reduce(
     (sums, curr) => {
@@ -74,4 +74,3 @@ const sums = accounts
     },
     { deposits: 0, withdrawals: 0 }
   );
-console.log('Sums: ', sums);
