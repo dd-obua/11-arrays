@@ -77,3 +77,8 @@ const { deposits, withdrawals } = accounts
 console.log('Deposits:', deposits);
 console.log('Withdrawals:', withdrawals);
 console.log();
+
+// Convert string to titleca
+const str1 = 'this is a nice title';
+const str2 = 'this is a LONG title but not too long';
+const str3 = 'and here is another title with an EXAMPLE';
