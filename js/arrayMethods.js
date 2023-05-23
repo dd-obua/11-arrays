@@ -37,3 +37,11 @@ const account5 = {
 };
 
 const accounts = [account1, account2, account3, account4, account5];
+
+// Compute total bank deposits
+const bankDepositSum = accounts
+  .map(acct => acct.txns)
+  .flat()
+  .filter(txn => txn > 0)
+  .reduce((acc, dep) => acc + dep, 0);
+console.log('Total bank deposit:', bankDepositSum);
