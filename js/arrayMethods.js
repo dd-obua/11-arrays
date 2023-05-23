@@ -82,3 +82,21 @@ console.log();
 const str1 = 'this is a nice title';
 const str2 = 'this is a LONG title but not too long';
 const str3 = 'and here is another title with an EXAMPLE';
+
+const toTitleCase = function (title) {
+  const exceptions = [
+    'a',
+    'an',
+    'and',
+    'or',
+    'to',
+    'for',
+    'from',
+    'but',
+    'in',
+    'is',
+    'with',
+    'too',
+    'not',
+  ];
+};
