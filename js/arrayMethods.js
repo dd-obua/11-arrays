@@ -110,3 +110,7 @@ const toTitleCase = function (title) {
 
   return capitalize(titleCase);
 };
+
+console.log(toTitleCase(str1));
+console.log(toTitleCase(str2));
+console.log(toTitleCase(str3));
