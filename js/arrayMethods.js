@@ -101,4 +101,10 @@ const toTitleCase = function (title) {
   ];
 
   const capitalize = str => str[0].toUpperCase() + str.slice(1);
+
+  const titleCase = title
+    .toLowerCase()
+    .split(' ')
+    .map(word => (exceptions.includes(word) ? word : capitalize(word)))
+    .join(' ');
 };
