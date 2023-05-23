@@ -44,3 +44,10 @@ const bankDepositSum = accounts
   .filter(txn => txn > 0)
   .reduce((acc, dep) => acc + dep, 0);
 console.log('Total bank deposit:', bankDepositSum);
+
+// Compute total bank withdrawals
+const bankWithdrawalSum = accounts
+  .flatMap(acct => acct.txns)
+  .filter(txn => txn < 0)
+  .reduce((acc, txn) => acc + txn);
+console.log('Total bank withdrawals:', bankWithdrawalSum);
