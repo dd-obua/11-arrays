@@ -76,3 +76,4 @@ const { deposits, withdrawals } = accounts
   );
 console.log('Deposits:', deposits);
 console.log('Withdrawals:', withdrawals);
+console.log();
