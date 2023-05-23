@@ -54,7 +54,7 @@ console.log('Deposits >= $1000:', numDeposits1000);
 // Compute deposits at least 2000 using reduce
 const numDeposits2000 = accounts
   .flatMap(acct => acct.txns)
-  .reduce((count, txn) => (txn >= 2000 ? count + 1 : count), 0);
+  .reduce((count, txn) => (txn >= 2000 ? ++count : count), 0);
 console.log('Deposits >= $2000:', numDeposits2000);
 
 // Compute total bank withdrawals
