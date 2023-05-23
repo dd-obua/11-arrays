@@ -61,5 +61,5 @@ console.log('Deposits >= $2000:', numDeposits2000);
 const bankWithdrawalSum = accounts
   .flatMap(acct => acct.txns)
   .filter(txn => txn < 0)
-  .reduce((sum, txn) => sum + txn);
+  .reduce((sum, txn) => sum + txn, 0);
 console.log('Total bank withdrawals:', bankWithdrawalSum);
