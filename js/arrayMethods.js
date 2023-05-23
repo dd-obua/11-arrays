@@ -45,6 +45,12 @@ const bankDepositSum = accounts
   .reduce((acc, dep) => acc + dep, 0);
 console.log('Total bank deposit:', bankDepositSum);
 
+// Compute deposits with at least $1000
+const numDeposits1000 = accounts
+  .flatMap(acct => acct.txns)
+  .filter(txn => txn >= 1000).length;
+console.log('Deposits >= $1000:', numDeposits1000);
+
 // Compute total bank withdrawals
 const bankWithdrawalSum = accounts
   .flatMap(acct => acct.txns)
