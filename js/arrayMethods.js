@@ -49,5 +49,5 @@ console.log('Total bank deposit:', bankDepositSum);
 const bankWithdrawalSum = accounts
   .flatMap(acct => acct.txns)
   .filter(txn => txn < 0)
-  .reduce((acc, txn) => acc + txn);
+  .reduce((sum, txn) => sum + txn);
 console.log('Total bank withdrawals:', bankWithdrawalSum);
