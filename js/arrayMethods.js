@@ -107,4 +107,6 @@ const toTitleCase = function (title) {
     .split(' ')
     .map(word => (exceptions.includes(word) ? word : capitalize(word)))
     .join(' ');
+
+  return capitalize(titleCase);
 };
